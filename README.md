@@ -13,7 +13,7 @@ Here are the steps for the APP to retrieve the credentials from Keepie.
 1. Todo-list APP makes an HTTP call to Keepie server, with the "receive_url" value in the HTTP body. Keepie server replies with 200.
 Bash example
 ```bash
-curl -X POST -d '{"receive_url": "http://localhost:9999/givemesecret"}' http://localhost:8080/sendSecretToMe
+curl -X POST -d '{"receive_url": "http://localhost:9999/givemesecret"}' http://localhost:8000/sendSecretToMe
 # Hello Some("127.0.0.1:60898") ! I've send the secrets to http://localhost:9999/givemesecret
 ```
 2. Keepie server send the credential with a POST request to the "receive_url"
@@ -28,14 +28,14 @@ Run the binary in your local in a Linux environment
 
 # Can I use it without downloading the binary?
 Yes. I've deployed this app to a server with public IP.
-You can just specify the Keepie server to http://107.173.104.196:8080
+You can just specify the Keepie server to http://107.173.104.196:8000
 
 
 # How to test 
 The below script will try to call the Keepie server 10 times.
 ```bash
-KEEPIE_SERVER=http://localhost:8080 # for local
-KEEPIE_SERVER=http://107.173.104.196:8080 # for internet
+KEEPIE_SERVER=http://localhost:8000 # for local
+KEEPIE_SERVER=http://107.173.104.196:8000 # for internet
 
 for n in {1..10} ; do curl -X POST -d '{"receive_url": "http://localhost:9999/givemesecret"}' $KEEPIE_SERVER/sendSecretToMe; sleep 1; done
 ```
