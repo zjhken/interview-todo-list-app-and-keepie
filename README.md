@@ -25,6 +25,8 @@ This step will not always work due the network stability. My Keepie server will 
 Simple download the binary in the Github release. I've compile the x64 GNU Linux binary for you.
 Run the binary in your local in a Linux environment
 `./interview-keepie`
+if there is error, you may need to install openssl dependency first
+`sudo apt install libssl-dev pkg-config -y`
 
 # Can I use it without downloading the binary?
 Yes. I've deployed this app to a server with public IP.
