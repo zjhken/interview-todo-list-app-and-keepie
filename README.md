@@ -58,5 +58,12 @@ Content-Length: 45
 {"username":"user_a","password":"password_a"}
 ```
 
-# Contact
+# What if I have questions about this code test?
 If you got any problem or want to ask anything, please send mail to zjhken@outlook.com
+But this mail box will only reply things related to this code test.
+
+# How to submit my work?
+You can submit your work by provide a Github link to your contact people, he/she will give us the link.
+** important **
+You must ensure your code at least can be run with a proper setup, and of course, it's functional.
+If there are any setup/build steps, please write them down in the README.md of your project
