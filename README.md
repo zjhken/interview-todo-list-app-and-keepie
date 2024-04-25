@@ -7,6 +7,7 @@ You are going to implement a todo-list app with the below requirements:
 * This app will not store any username and password, this app should get the credential information from a service that storing credentials, let's call this credential service "Keepie".(I've made this Keepie service ready for you)
 * Because of network problem, the Keepie server will not always send the credential to the todo-list APP successfully. You need to keep calling Keepie server for credential until you APP receive it.
 * Once your APP receives the credential, it should stop calling Keepie server to prevent unnecessary network traffic.
+* Using programming language that you are not familiar will be a better outcome for us.
 
 # How Keepie works
 Here are the steps for the APP to retrieve the credentials from Keepie.
